@@ -5,7 +5,10 @@ body{
     color: #738A7A;
     
 }
-
+.container{
+    max-width: 480px;
+    margin: 0 auto;
+}
 header{
     padding: 16px;
 }
