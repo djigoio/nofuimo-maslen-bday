@@ -39,8 +39,8 @@ body{
     
 }
 .container{
-    max-width: 30em;
-        margin: 0 auto;
+   max-width: 30em;
+    margin: 0 auto;
 }
 header{
     padding: 16px;
