@@ -75,12 +75,13 @@ text-align: center;
 .surprise-container{
     border: 0.5px solid #738A7A;
     border-radius: 16px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px 16px;
     gap: 15px;
+    margin-top: -80px;
+
 }
 .surprise-title{
     border: 0.5px solid #738A7A;
