@@ -1,5 +1,100 @@
-section, header
-{
-    background-color: antiquewhite;
-    min-height: 100vh;
+body{
+    background-color: #F1F3F4;
+    margin: 0;
+    padding: 0;
+    color: #738A7A;
+    
 }
+
+header{
+    padding: 16px;
+}
+.title-container{
+    color: #3A5141;
+
+}
+.title-container h1 {
+    font-family: 'Sfizia';
+font-style: italic;
+font-weight: 400;
+font-size: 104.719px;
+line-height: 147px;
+margin-top:-30px;
+margin-bottom: 0;
+}
+
+.title-container p {
+    margin: 0;
+    text-align: left;
+    font-family: 'Sfizia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+p{
+    font-family: 'Sfizia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.images-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.images-container span {
+    align-self: center;
+    rotate: -30deg;
+    font-family: 'Sfizia';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 10px;
+margin-left: -30px;
+margin-right: -15px;
+text-align: center;
+}
+.svg{
+    height: auto;
+}
+.svg-heart{
+    min-width: 116px;
+    height: 107px;
+    margin-top: -50px;
+}
+.svg-wavy{
+    min-width: 248px;
+    margin-top: -50px;
+}
+
+.surprise-container{
+    border: 0.5px solid #738A7A;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 16px;
+    gap: 15px;
+}
+.surprise-title{
+    border: 0.5px solid #738A7A;
+    text-align: center;
+    font-family: 'Sfizia';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    padding: 20px 10px;
+    border-radius: 1e+06px;
+}
+.surprise-text{
+    font-size: 16px;
+    margin: 0;
+}
+
