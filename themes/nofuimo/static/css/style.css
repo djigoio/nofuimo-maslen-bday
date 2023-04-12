@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Sfizia Italic 2';
-    src: url('fonts/Sfizia-RegularItalicNo2.otf');
+    src: url('../fonts/Sfizia-RegularItalicNo2.otf');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Sfizia Bold';
-    src: url('fonts/Sfizia-Bold.otf');
+    src: url('../fonts/Sfizia-Bold.otf');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Sfizia Italic';
-    src: url('fonts/Sfizia-RegularItalic.otf');
+    src: url('../fonts/Sfizia-RegularItalic.otf');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -39,24 +39,20 @@ body{
     
 }
 .container{
-   max-width: 30em;
     margin: 0 auto;
-}
-header{
     padding: 16px;
 }
+
 .title-container{
     color: #3A5141;
 
 }
 .title-container h1 {
-    font-family: 'Sfizia';
-font-style: italic;
-font-weight: 400;
-font-size: 105px;
-line-height: 147px;
-margin-top:-30px;
-margin-bottom: 0;
+    font-family: 'Sfizia Italic';
+    font-size: 105px;
+    line-height: 147px;
+    margin-top:-20px;
+    margin-bottom: 0;
 }
 
 .title-container p {
@@ -64,7 +60,7 @@ margin-bottom: 0;
     text-align: left;
     font-family: 'Sfizia';
     font-style: normal;
-    font-weight: 400;
+    
     font-size: 12px;
     line-height: 20px;
 }
@@ -72,7 +68,7 @@ margin-bottom: 0;
 p{
     font-family: 'Sfizia';
     font-style: normal;
-    font-weight: 400;
+    
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -86,25 +82,24 @@ p{
 .images-container span {
     align-self: center;
     rotate: -30deg;
-    font-family: 'Sfizia';
-font-style: italic;
-font-weight: 400;
-font-size: 12px;
-line-height: 10px;
-margin-left: -30px;
-margin-right: -15px;
-text-align: center;
+    font-family: 'Sfizia Italic';
+    font-size: 12px;
+    line-height: 10px;
+    margin-right: -15px;
+    margin-bottom: 32px;
+    text-align: center;
 }
 .svg{
     height: auto;
 }
 .svg-heart{
     min-width: 116px;
-    height: 107px;
-    margin-top: -50px;
+    height: auto;
+    margin-top: -82px;
 }
 .svg-wavy{
     min-width: 248px;
+    height: auto;
     margin-top: -50px;
 }
 
@@ -122,9 +117,7 @@ text-align: center;
 .surprise-title{
     border: 0.5px solid #738A7A;
     text-align: center;
-    font-family: 'Sfizia';
-    font-style: italic;
-    font-weight: 400;
+    font-family: 'Sfizia Italic';
     font-size: 24px;
     line-height: 34px;
     padding: 20px 10px;
@@ -136,3 +129,43 @@ text-align: center;
     margin: 0;
 }
 
+.surprise-text.left{text-align: left;}
+.surprise-text.right{
+    text-align: right;
+}
+.destiny{
+    display: flex;
+    flex-flow: column;
+}
+.destiny h2{
+    font-family: 'Sfizia Italic';
+    font-size: 103.036px;
+    line-height: 144px;
+    margin: 0;
+    margin-top: -20px;
+}
+
+.destiny h2:last-child{
+    margin-top: -65px;
+}
+.madeira-gallery{
+    width: calc(100% + 32px);
+    margin: 40px -16px;
+}
+.antonio{
+    font-family: 'Sfizia Italic';
+    font-size: 56px;
+    line-height: 78px;
+    text-align: right;
+    color: #3A5141;
+}
+.smile{
+    font-family: 'Sfizia';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    align-self: flex-end;
+    color: #9CB1A2;
+    margin-top: -15px;
+    margin-right: 15px;
+}
