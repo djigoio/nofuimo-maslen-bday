@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'Sfizia';
+    src: url('../fonts/Sfizia-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sfizia Italic 2';
+    src: url('fonts/Sfizia-RegularItalicNo2.otf');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sfizia Bold';
+    src: url('fonts/Sfizia-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sfizia Italic';
+    src: url('fonts/Sfizia-RegularItalic.otf');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
 body{
     background-color: #F1F3F4;
     margin: 0;
@@ -96,6 +129,7 @@ text-align: center;
     line-height: 34px;
     padding: 20px 10px;
     border-radius: 1e+06px;
+    padding: 0.25em 1.1em;
 }
 .surprise-text{
     font-size: 1em;
