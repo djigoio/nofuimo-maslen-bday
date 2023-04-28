@@ -89,8 +89,29 @@ p {
     text-align: center;
 }
 
-.svg {
+.svg, svg{
+    --animate-duration: 45s;
     height: auto;
+}
+
+.flower-svg{
+    --animate-duration:25s
+}
+.transport{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.transport h1,h2{
+    font-size: 15vw;
+}
+
+.car{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .svg-heart {
@@ -159,7 +180,7 @@ p {
     min-width: 350px;
 }
 
-.madeira-gallery {
+.madeira-gallery, .stay-gallery {
     width: calc(100% + 32px);
     margin: 40px -16px;
 }
@@ -183,7 +204,7 @@ p {
     margin-right: 15px;
 }
 marquee{
-
+    margin: 25px 0;
     font-family: 'Sfizia';
     font-style: italic;
     font-weight: 400;
@@ -192,6 +213,9 @@ marquee{
     color: #738A7A;
     border-top: .5px solid #738A7A;
     border-bottom:  .5px solid #738A7A;
+}
+footer marquee{
+    margin-bottom: 0;
 }
 .surprise-container button{
     box-sizing: border-box;
@@ -203,3 +227,9 @@ border: 0.5px solid #F1F3F4;
 border-radius: 5px;
 color: white;
 }
+
+.accept .surprise-container{
+    margin-top: 0;
+}
+
+.accept h2{margin: 5px;}
