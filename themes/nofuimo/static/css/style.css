@@ -108,8 +108,18 @@ p {
     margin-bottom: 32px;
 }
 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 .flower-svg{
-    --animate-duration:25s
+    animation: rotation 15s infinite linear;
+    overflow: hidden;
 }
 .transport{
     display: flex;
@@ -181,6 +191,7 @@ h1,h2{
 .destiny {
     display: flex;
     flex-flow: column;
+    position: relative;
 }
 
 .destiny h2 {
@@ -274,7 +285,7 @@ font-size: 16px;
 font-size: 60px;}
 
 .nofuimo{
-    font-family: "Sfiza";
+    font-family: "Sfiza Italic";
     font-style: italic;
     font-weight: 400;
 
