@@ -150,7 +150,7 @@ h1,h2{
     margin-top: -50px;
 }
 
-.accept{}
+.accept{padding: 0;}
 
 .surprise-container {
     border: 0.5px solid #738A7A;
@@ -222,9 +222,10 @@ h1,h2{
     margin: 15px 0;
 }
 .stay h2{
-    margin-top: -20px;
+    margin-top: -10px;
     margin-bottom: 0;
     text-align: left;
+    font-size: 3em;
 }
 
 .antonio {
@@ -280,13 +281,10 @@ font-size: 16px;
 }
 
 .accept h2{
-    font-family: "Sfiza";
     margin: 5px;
 font-size: 60px;}
 
 .nofuimo{
-    font-family: "Sfiza Italic";
-    font-style: italic;
     font-weight: 400;
 
 }
