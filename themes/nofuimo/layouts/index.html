@@ -30,6 +30,10 @@ h2{
       font-family: 'Sfizia';
 
 }
+.link {
+  font-size: 16px;
+  color: #738A7A;
+}
 
 </style>
 </head>
@@ -63,7 +67,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("counter").innerHTML = '<a href="/marlene">Descubre tu regalo :]</a>';
+    document.getElementById("counter").innerHTML = '<a class="link" href="/marlene">Descubre tu regalo :]</a>';
   }
 }, 1000);
 </script>
