@@ -39,6 +39,48 @@ body {
     overflow-x: hidden;
 }
 
+
+
+#felicidades{
+    z-index: 200;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    pointer-events: none;
+    color: #3A5141;
+    font-family: "Sfiza Italic";
+    font-family: italic;
+
+
+}
+@keyframes unblurFelicitaciones {
+    from{
+        opacity: 0;
+        backdrop-filter: blur(0px);
+
+    }
+    to{
+        backdrop-filter: blur(10px);
+
+        opacity: 1;
+        color: #3A5141    }
+}
+#felicidades.unblur{
+    animation: unblurFelicitaciones 4s  linear;
+    animation-fill-mode:forwards;
+
+}
+
+
+
+
 .container {
     margin: 0 auto;
     box-sizing: border-box;
@@ -298,4 +340,15 @@ font-size: 60px;}
     .surprise-container{
         padding: 12px;
     }
+}
+/*
+.accept{
+    
+    position: relative;
+}
+.sparkle-svg{
+position: absolute;
+right: 0;
+bottom: -120;
+z-index: -1;
 }
