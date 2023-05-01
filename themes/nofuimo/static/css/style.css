@@ -34,22 +34,28 @@ body {
     background-color: #F1F3F4;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: #738A7A;
 }
 
 .container {
     margin: 0 auto;
+    box-sizing: border-box;
     padding: 16px;
     overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .title-container {
     color: #3A5141;
 }
 
+
 .title-container h1 {
     font-family: 'Sfizia Italic';
-    font-size: 26vw;
+    font-size: 5em;
     line-height: 147px;
     margin-top: -20px;
     margin-bottom: 0;
@@ -57,10 +63,11 @@ body {
 
 .title-container p {
     margin: 0;
+    margin-bottom: 12px;
     text-align: left;
     font-family: 'Sfizia';
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -93,6 +100,9 @@ p {
     --animate-duration: 45s;
     height: auto;
 }
+.leaf{
+    margin-bottom: 32px;
+}
 
 .flower-svg{
     --animate-duration:25s
@@ -103,8 +113,9 @@ p {
     align-items: center;
 }
 
-.transport h1,h2{
-    font-size: 15vw;
+h1,h2{
+    font-size: 103.036px;
+    text-align: center;
 }
 
 .car{
@@ -164,7 +175,7 @@ p {
 
 .destiny h2 {
     font-family: 'Sfizia Italic';
-    font-size: 103.036px;
+    font-size: 5em;
     line-height: 144px;
     margin: 0;
     margin-top: -20px;
@@ -181,7 +192,7 @@ p {
 }
 
 .madeira-gallery, .stay-gallery {
-    width: calc(100% + 32px);
+    /*width: calc(100% + 32px);*/
     margin: 40px -16px;
 }
 
@@ -190,6 +201,7 @@ p {
     font-size: 56px;
     line-height: 78px;
     text-align: right;
+    align-self: end;
     color: #3A5141;
 }
 
@@ -204,7 +216,7 @@ p {
     margin-right: 15px;
 }
 marquee{
-    margin: 25px 0;
+    margin: 0;
     font-family: 'Sfizia';
     font-style: italic;
     font-weight: 400;
@@ -214,6 +226,9 @@ marquee{
     border-top: .5px solid #738A7A;
     border-bottom:  .5px solid #738A7A;
 }
+.marquee-text{
+    margin: 25px 0;
+}
 footer marquee{
     margin-bottom: 0;
 }
@@ -221,15 +236,25 @@ footer marquee{
     box-sizing: border-box;
 padding: 10px 20px 13px;
 width: 80%;
-height: 34px;
 background: #3A5141;
 border: 0.5px solid #F1F3F4;
 border-radius: 5px;
 color: white;
+font-family: "Sfiza";
+font-size: 16px;
 }
 
 .accept .surprise-container{
     margin-top: 0;
 }
 
-.accept h2{margin: 5px;}
+.accept h2{
+    font-family: "Sfiza";
+    margin: 5px;}
+
+.nofuimo{
+    font-family: "Sfiza";
+    font-style: italic;
+    font-weight: 400;
+
+}
