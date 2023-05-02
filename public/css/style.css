@@ -34,22 +34,74 @@ body {
     background-color: #F1F3F4;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: #738A7A;
+    overflow-x: hidden;
 }
+
+
+
+#felicidades{
+    z-index: 200;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    pointer-events: none;
+    color: #3A5141;
+    font-family: "Sfiza Italic";
+    font-family: italic;
+}
+
+
+@keyframes unblurFelicitaciones {
+    from{
+        opacity: 0;
+        backdrop-filter: blur(0px);
+
+    }
+    to{
+        backdrop-filter: blur(10px);
+
+        opacity: 1;
+        color: #3A5141    }
+}
+#felicidades.unblur{
+    animation: unblurFelicitaciones 4s  linear;
+    animation-fill-mode:forwards;
+
+}
+
+
+
 
 .container {
     margin: 0 auto;
+    box-sizing: border-box;
     padding: 16px;
     overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    max-width: 768px;
 }
 
 .title-container {
     color: #3A5141;
+    width: 100%;
 }
+
 
 .title-container h1 {
     font-family: 'Sfizia Italic';
-    font-size: 26vw;
+    font-size: 5em;
     line-height: 147px;
     margin-top: -20px;
     margin-bottom: 0;
@@ -57,10 +109,11 @@ body {
 
 .title-container p {
     margin: 0;
+    margin-bottom: 12px;
     text-align: left;
     font-family: 'Sfizia';
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -93,18 +146,38 @@ p {
     --animate-duration: 45s;
     height: auto;
 }
+.leaf{
+    margin-bottom: 32px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 
 .flower-svg{
-    --animate-duration:25s
+    animation: rotation 15s infinite linear;
+    overflow: hidden;
 }
 .transport{
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin-top: 25px;
 }
+.transport h1{font-size: 3em;margin-top: -50px;}
 
-.transport h1,h2{
-    font-size: 15vw;
+h1,h2{
+    font-family: 'Sfizia Italic';
+    font-size: 5em;
+    
+}
+#felicidades h2{
+    font-size: 3em;
 }
 
 .car{
@@ -122,15 +195,18 @@ p {
     margin-top: -50px;
 }
 
+.accept{padding: 0;}
+
 .surprise-container {
     border: 0.5px solid #738A7A;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 16px;
     gap: 15px;
     margin-top: -75px;
+    max-width: 80%;
+    width: 100%;
 }
 
 .surprise-title {
@@ -160,11 +236,12 @@ p {
 .destiny {
     display: flex;
     flex-flow: column;
+    position: relative;
 }
 
 .destiny h2 {
     font-family: 'Sfizia Italic';
-    font-size: 103.036px;
+    font-size: 5em;
     line-height: 144px;
     margin: 0;
     margin-top: -20px;
@@ -184,12 +261,24 @@ p {
     width: calc(100% + 32px);
     margin: 40px -16px;
 }
+.stay .title-container{
+    text-align: left;
+    width: 100%;
+    margin: 15px 0;
+}
+.stay h2{
+    margin-top: -10px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 3em;
+}
 
 .antonio {
     font-family: 'Sfizia Italic';
     font-size: 56px;
     line-height: 78px;
     text-align: right;
+    align-self: end;
     color: #3A5141;
 }
 
@@ -204,7 +293,7 @@ p {
     margin-right: 15px;
 }
 marquee{
-    margin: 25px 0;
+    margin: 0;
     font-family: 'Sfizia';
     font-style: italic;
     font-weight: 400;
@@ -214,6 +303,9 @@ marquee{
     border-top: .5px solid #738A7A;
     border-bottom:  .5px solid #738A7A;
 }
+.marquee-text{
+    margin: 25px 0;
+}
 footer marquee{
     margin-bottom: 0;
 }
@@ -221,15 +313,51 @@ footer marquee{
     box-sizing: border-box;
 padding: 10px 20px 13px;
 width: 80%;
-height: 34px;
 background: #3A5141;
 border: 0.5px solid #F1F3F4;
 border-radius: 5px;
 color: white;
+font-family: "Sfiza";
+font-size: 16px;
 }
 
 .accept .surprise-container{
     margin-top: 0;
+    margin-bottom: 32px;
 }
 
-.accept h2{margin: 5px;}
+.accept h2{
+    margin: 5px;
+font-size: 60px;}
+
+.nofuimo{
+    font-weight: 400;
+
+}
+
+@media (min-width:320px){
+    .surprise-container{
+        padding: 7px;
+    }
+}
+@media (min-width:400px){
+    .surprise-container{
+        padding: 12px;
+    }
+}
+
+.hearts{
+    margin-top: 55px;
+    margin-bottom: -60px;
+}
+/*
+.accept{
+    
+    position: relative;
+}
+.sparkle-svg{
+position: absolute;
+right: 0;
+bottom: -120;
+z-index: -1;
+}

@@ -1,4 +1,11 @@
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<div id="felicidades">
+    <h2>¡Felicidades!</h2>
+    <p>Prepara tus maletas para el 29 de Mayo :)</p>
+    <p>¡Espero con muchas ganas poder explorar Madeira contigo!
+        Tremendo abrazo,
+        Antonio</p>
+</div><link rel="stylesheet" type="text/css" href="/css/style.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nofuimo - Regalo para Marlene</title>
@@ -10,6 +17,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
 <section class="landing container">
+    <img src="/images/leaf.svg" alt="A decorative element" class="svg leaf">
     <div class="title-container">
         <p class="hello">¡Hola!</p>
         <h1>Marlene</h1>
@@ -31,17 +39,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     </div>
 </section><section class="destiny container">
     <div class="title-container">
-        <img class="flower-svg animate__animated animate__rotateOut animate__infinite" src="/images/flower.svg" alt="A pretty flower serving as a background">
+        <img class="flower-svg" src="/images/flower.svg" alt="A pretty flower serving as a background">
         <p class="hello">Te ha tocado aguantarme en: </p>
         <h2>Ilha da</h2>
         <h2>Madeira</h2>
-        <p class="surprise-text left"> Playas prístinas, paisajes impresionantes y cultura vibrante, Madeira es un verdadero tesoro en la tierra. </p>
     </div>
+    <p class="surprise-text left"> Playas prístinas, paisajes impresionantes y cultura vibrante, Madeira es un verdadero tesoro en la tierra. </p>
     <img class="svg madeira-gallery" loading="lazy" src="/images/madeira-gallery.svg" alt="Multiple photos of landscapes in Madeira">
     <p class="surprise-text right"> Te espera una experiencia de vida mientras exploras esta joya escondida con con un maravilloso compañero de viaje...
     </p>
     <span class="antonio">¡Antonio!</span>
     <span class="smile">:]</span>
+<img class="svg hearts" src="/images/hearts.svg" alt="Pretty">
+
 </section><section class="stay container">
     <div class="title-container">
         <p class="hello">Una casita</p>
@@ -49,31 +59,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     </div>
 <p class="surprise-text left">Durante tu viaje, te alojarás en un impresionante alojamiento enclavado en las montañas, con vistas panorámicas al mar.
 </p>
-<img class="svg small-star" loading="lazy" src="/images/stay-gallery.svg" alt="Multiple photos of a house in Madeira">
+<img class="svg stay-gallery" loading="lazy" src="/images/stay-gallery.svg" alt="Multiple photos of a house in Madeira">
 </section>
 <marquee  direction="right">¡Aun con posibilidad de cambio! <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira">¡Aun con posibilidad de cambio! <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira"></marquee>
-<p class="surprise-text marquee-text">Es el lugar perfecto para relajarse, rejuvenecer y crear recuerdos entrañables con tu compañero más cercano <b>*wink*</b>.</p>
-<marquee  class="bottom-marquee"  direction="left">¡Aun con posibilidad de cambio! <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira">¡Aun con posibilidad de cambio! <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira"></marquee><section class="transport container">
+<p class="surprise-text marquee-text">Es el lugar perfecto para relajarse, rejuvenecer y crear recuerdos entrañables con tu compañero de viaje <b>*wink*</b>.</p>
+<marquee class="bottom-marquee" direction="left">¡Aun con posibilidad de cambio! <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira">¡Aun con posibilidad de cambio! <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira"></marquee><section class="transport container">
     <div class="title-container">
         <p class="hello">Get ready for...</p>
-        <h2>cocheaventuras</h2>
+        <h1>cocheaventuras</h1>
     </div>
-<p class="surprise-text left">Desde recorrer las escénicas carreteras costeras hasta explorar pintorescas rutas por el campo, tendrás la libertad de ir a donde tu corazón te lleve... ¡en este fantástico coche!</p>
+<p class="surprise-text left">Desde recorrer las escénicas carreteras costeras hasta explorar pintorescas rutas por el campo, tendrás la libertad de ir a donde tu corazón te lleve... ¡en este fantástico coche! (o similar...)</p>
 <img class="svg car animate__animated animate__tada animate__infinite" loading="lazy" src="/images/car.svg" alt="A photo of a beautiful car">
 
 </section><section class="accept container">
     <div class="surprise-container">
-        <div class="surprise-title">¡Sorpresa!</div>
         <p class="surprise-text"> Ahora, el momento de la verdad: ¿estás lista para aceptar esta increíble aventura? Si te ha gustado la idea, haz clic en el botón "Aceptar"... y,
         </p>
-        <h2>¡no'fuimo!</h2>
-        <button>Aceptar</button>
-</section><p>Prepara tus maletas y prepárate para embarcarte en un viaje de vida con Antonio y descubrir la magia de Madeira. ¡Acepta tu viaje ahora y para obtener una experiencia a recordar!
-¡Espero con muchas ganas poder explorar Madeira contigo!
-Tremendo abrazo,
-Antonio
-</p><footer>
-    <marquee  direction="right">
+        <h2 class="nofuimo">¡no'fuimo!</h2>
+        <button id="accept">Aceptar</button>
+        
+</section>
+<footer>
+    <marquee  direction="left">
     Made with LOVE
     <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira">
     Proyecto hecho gracias a Antonio y Marta Holly
@@ -82,3 +89,4 @@ Antonio
     <img class="svg small-star" loading="lazy" src="/images/small-star.svg" alt="Multiple photos of a house in Madeira">
 </marquee>
 </footer>
+<script src="/js/index.js"></script>
