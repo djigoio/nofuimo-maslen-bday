@@ -352,6 +352,7 @@ font-size: 60px;}
     margin-bottom: -120px;
     z-index: 11;
     margin-left: -40px;
+    max-width: 100%;
 }
 /*
 .accept{
