@@ -91,7 +91,9 @@ body {
     align-items: center;
     width: 100%;
     max-width: 768px;
+    position: relative;
 }
+
 
 .title-container {
     color: #3A5141;
@@ -347,12 +349,18 @@ font-size: 60px;}
     }
 }
 
+.heart-container{
+    overflow: hidden;
+    z-index: 11;
+    min-height: 380px;
+    margin-bottom: -60px;
+}
 .hearts{
     margin-top: 35px;
-    margin-bottom: -120px;
-    z-index: 11;
+    margin-bottom: -80px;
     margin-left: -40px;
-    max-width: 100%;
+    width: 125%;
+    overflow: hidden;
 }
 /*
 .accept{
