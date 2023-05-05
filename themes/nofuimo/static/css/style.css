@@ -347,8 +347,10 @@ font-size: 60px;}
 }
 
 .hearts{
-    margin-top: 55px;
-    margin-bottom: -60px;
+    margin-top: 35px;
+    margin-bottom: -120px;
+    z-index: 11;
+    margin-left: -40px;
 }
 /*
 .accept{
